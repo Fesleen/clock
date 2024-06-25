@@ -4,16 +4,13 @@ function uptadeClock() {
     var minutes = now.getMinutes();
     var seconds = now.getSeconds();
 
-
     hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-
     var timeString = hours + ':' + minutes + ':' + seconds;
     document.getElementById("card").innerHTML = timeString;
 }
-
 
 setInterval(uptadeClock, 1000);
 uptadeClock();
